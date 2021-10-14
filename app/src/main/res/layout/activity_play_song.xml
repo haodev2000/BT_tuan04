@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2929"
+    app:layoutDescription="@xml/activity_play_song_scene"
+    tools:context=".PlaySong">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="309dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image" />
+
+    <TextView
+        android:id="@+id/txtNameSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/txtNameSinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="#FDFCFC"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtNameSong"
+        app:layout_constraintStart_toStartOf="@+id/txtNameSong"
+        app:layout_constraintTop_toBottomOf="@+id/txtNameSong" />
+
+    <ImageView
+        android:id="@+id/Play"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="132dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtNameSinger"
+        app:layout_constraintStart_toStartOf="@+id/txtNameSinger"
+        app:layout_constraintTop_toBottomOf="@+id/txtNameSinger"
+        app:srcCompat="@drawable/tieptuc" />
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Play"
+        app:layout_constraintStart_toEndOf="@+id/Play"
+        app:layout_constraintTop_toTopOf="@+id/Play"
+        app:layout_constraintVertical_bias="0.55"
+        app:srcCompat="@drawable/next" />
+
+    <ImageView
+        android:id="@+id/prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Play"
+        app:layout_constraintEnd_toStartOf="@+id/Play"
+        app:layout_constraintTop_toTopOf="@+id/Play"
+        app:layout_constraintVertical_bias="0.55"
+        app:srcCompat="@drawable/prev" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="343dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#FFFDFD"
+        app:layout_constraintEnd_toEndOf="@+id/txtNameSinger"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/txtNameSinger"
+        app:layout_constraintTop_toBottomOf="@+id/txtNameSinger" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loibaihat"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageDia"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="544dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dia" />
+</androidx.constraintlayout.motion.widget.MotionLayout>
